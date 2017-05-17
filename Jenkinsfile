@@ -1,5 +1,6 @@
 node {
      lock(inversePrecedence: true, quantity: 1, resource: 'myResource') {
+          bat 'date'
          stage('checkout') {
         // some block
             echo 'Checkout stage'
