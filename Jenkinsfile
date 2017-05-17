@@ -1,6 +1,6 @@
 node {
      lock(inversePrecedence: true, quantity: 1, resource: 'myResource') {
-          bat 'date'
+          echo "date:" $(date +'%Y-%m-%d_%H-%M-%S')
          stage('checkout') {
         // some block
             echo 'Checkout stage'
@@ -33,5 +33,6 @@ node {
         // some block
             echo 'add node'
         }
+      echo "date:" $(date +'%Y-%m-%d_%H-%M-%S')
     }
 }
