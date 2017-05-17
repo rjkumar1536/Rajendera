@@ -1,5 +1,5 @@
 node {
-     lock('myResource') {
+     lock(inversePrecedence: true, quantity: 1, resource: 'myResource') {
          stage('checkout') {
         // some block
             echo 'Checkout stage'
