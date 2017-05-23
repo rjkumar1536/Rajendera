@@ -32,10 +32,4 @@ pipeline {
             echo 'Things were different before...'
         }
     }
-    job(String name) {
-  publishers {
-    gitHubIssueNotifier {
-    }
-  }
-}
 }
