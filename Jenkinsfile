@@ -14,12 +14,12 @@ pipeline {
         }
         success {
             echo 'I succeeeded!'
-            job(String name) {
+            /*job(String name) {
                 publishers {
                     gitHubIssueNotifier {
                     }
                 }
-            }
+            }*/
         }
         unstable {
             echo 'I am unstable :/'
