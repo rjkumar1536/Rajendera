@@ -14,8 +14,12 @@ pipeline {
         }
         success {
             echo 'I succeeeded!'
-            hipchatSend message: "Attention @here ${env.JOB_NAME} #${env.BUILD_NUMBER} has failed.",
-             color: 'RED'
+            job(String name) {
+                publishers {
+                    gitHubIssueNotifier {
+                    }
+                }
+            }
         }
         unstable {
             echo 'I am unstable :/'
