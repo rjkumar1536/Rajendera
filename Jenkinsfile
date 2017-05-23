@@ -4,6 +4,7 @@ pipeline {
         stage('No-op') {
             steps {
                 echo "stating"
+                git credentialsId: '96616f8d-26fc-4ea5-9fc6-ed90a253e4db', url: 'git@github.com:rjkumar1536/Rajendera.git'
                 githubNotify description: 'This is a shorted example',  status: 'SUCCESS'
             }
         }
