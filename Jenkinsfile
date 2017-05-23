@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('No-op') {
             steps {
-                sh 'ls'
+                echo "stating"
             }
         }
     }
