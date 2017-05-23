@@ -3,10 +3,6 @@ pipeline {
     stages {
         stage('No-op') {
             steps {
-              publishers {
-                gitHubIssueNotifier {
-                }
-              }
                 echo "stating"
                 //githubNotify account: 'rjkumar1536',description: 'This is an example', repo: 'Rajendera', sha:'47:1d:1b:43:53:1e:7e:1c:43:cc:9d:8c:40:f9:ca:9a', status: 'SUCCESS', targetUrl: 'https://my-jenkins-instance.com'
             }
@@ -36,4 +32,10 @@ pipeline {
             echo 'Things were different before...'
         }
     }
+    job(String name) {
+  publishers {
+    gitHubIssueNotifier {
+    }
+  }
+}
 }
