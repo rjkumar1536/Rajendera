@@ -4,7 +4,7 @@ pipeline {
         stage('No-op') {
             steps {
                 echo "stating"
-                githubNotify account: 'rjkumar1536', credentialsId: '96616f8d-26fc-4ea5-9fc6-ed90a253e4db',description: 'This is an example', repo: 'Rajendera',  status: 'SUCCESS', targetUrl: 'https://my-jenkins-instance.com'
+                githubNotify account: 'rjkumar1536',description: 'This is an example', repo: 'Rajendera', sha:'47:1d:1b:43:53:1e:7e:1c:43:cc:9d:8c:40:f9:ca:9a', status: 'SUCCESS', targetUrl: 'https://my-jenkins-instance.com'
             }
         }
     }
