@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo "stating"
                 git credentialsId: '96616f8d-26fc-4ea5-9fc6-ed90a253e4db', url: 'git@github.com:rjkumar1536/Rajendera.git'
-                slackSend color: 'danger', message: $BUILD_URL
+                echo '$BUILD_URL'
                //githubNotify account: 'rjkumar1536',credentialsId: '96616f8d-26fc-4ea5-9fc6-ed90a253e4db',description: 'This is an example', repo: 'Rajendera',status: 'SUCCESS', targetUrl: 'https://my-jenkins-instance.com'
             }
         }
