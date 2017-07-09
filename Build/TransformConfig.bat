@@ -1,0 +1,1 @@
+"C:\GocdUtilities\WebconfigTransformer\WebConfigTransformRunner.exe" %WorkSpace%\Carwale\web.config %WorkSpace%\Carwale\web.Release.config %WorkSpace%\Carwale\web.config

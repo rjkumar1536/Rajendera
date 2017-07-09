@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe" %~1\Carwale\Carwale.UI.csproj /T:Package /P:Configuration=%~2;PackageLocation=%~3package.zip;RunCodeAnalysis=false

@@ -1,0 +1,26 @@
+create table StagingWebsitePool(
+	branchname VARCHAR(80),
+    OccupancyStatus int,
+    NodeName VARCHAR(80),
+    MonFolderLocation VARCHAR(80),
+    WebSiteFolderLocation VARCHAR(80),
+    MonBackupLocation VARCHAR(80),
+    RemoteScriptLocation VARCHAR(80),
+    WebSiteBackUpLocation VARCHAR(80),
+    ComputerName VARCHAR(80),
+    ApplicationName VARCHAR(80) PRIMARY KEY,
+    WebSiteFolderName VARCHAR(80),
+    PORT VARCHAR(5)
+);
+
+insert into StagingWebsitePool values('NONE',0,'stg9000','E:/sites/carwale/staging.carwale_9000/mon','E:/sites/carwale/','E:/sites/carwale/CDScripts/mon','E:/sites/carwale/CDScripts/','E:/sites/carwale/siteBackup','https://10.10.3.110:8172/msdeploy.axd?site=staging.carwale_9000','staging.carwale_9000','staging.carwale_9000','9000');
+insert into StagingWebsitePool values('NONE',0,'stg9003','E:/sites/carwale/staging.carwale_9003/mon','E:/sites/carwale/','E:/sites/carwale/CDScripts/mon','E:/sites/carwale/CDScripts/','E:/sites/carwale/siteBackup','https://10.10.3.110:8172/msdeploy.axd?site=staging.carwale_9003','staging.carwale_9003','staging.carwale_9003','9003');
+insert into StagingWebsitePool values('NONE',0,'stg9002','E:/sites/carwale/staging.carwale_9002/mon','E:/sites/carwale/','E:/sites/carwale/CDScripts/mon','E:/sites/carwale/CDScripts/','E:/sites/carwale/siteBackup','https://10.10.3.110:8172/msdeploy.axd?site=staging.carwale_9002','staging.carwale_9002','staging.carwale_9002','9002');
+insert into StagingWebsitePool values('NONE',0,'stg9004','E:/sites/carwale/staging.carwale_9004/mon','E:/sites/carwale/','E:/sites/carwale/CDScripts/mon','E:/sites/carwale/CDScripts/','E:/sites/carwale/siteBackup','https://10.10.3.110:8172/msdeploy.axd?site=staging.carwale_9004','staging.carwale_9004','staging.carwale_9004','9004');
+insert into StagingWebsitePool values('NONE',0,'stg9005','E:/sites/carwale/staging.carwale_9005/mon','E:/sites/carwale/','E:/sites/carwale/CDScripts/mon','E:/sites/carwale/CDScripts/','E:/sites/carwale/siteBackup','https://10.10.3.110:8172/msdeploy.axd?site=staging.carwale_9005','staging.carwale_9005','staging.carwale_9005','9005');
+insert into StagingWebsitePool values('NONE',0,'stg9006','E:/sites/carwale/staging.carwale_9006/mon','E:/sites/carwale/','E:/sites/carwale/CDScripts/mon','E:/sites/carwale/CDScripts/','E:/sites/carwale/siteBackup','https://10.10.3.110:8172/msdeploy.axd?site=staging.carwale_9006','staging.carwale_9006','staging.carwale_9006','9006');
+insert into StagingWebsitePool values('NONE',0,'stg9007','E:/sites/carwale/staging.carwale_9007/mon','E:/sites/carwale/','E:/sites/carwale/CDScripts/mon','E:/sites/carwale/CDScripts/','E:/sites/carwale/siteBackup','https://10.10.3.110:8172/msdeploy.axd?site=staging.carwale_9007','staging.carwale_9007','staging.carwale_9007','9007');
+insert into StagingWebsitePool values('NONE',0,'stg9008','E:/sites/carwale/staging.carwale_9008/mon','E:/sites/carwale/','E:/sites/carwale/CDScripts/mon','E:/sites/carwale/CDScripts/','E:/sites/carwale/siteBackup','https://10.10.3.110:8172/msdeploy.axd?site=staging.carwale_9008','staging.carwale_9008','staging.carwale_9008','9008');
+insert into StagingWebsitePool values('NONE',0,'stg9009','E:/sites/carwale/staging.carwale_9009/mon','E:/sites/carwale/','E:/sites/carwale/CDScripts/mon','E:/sites/carwale/CDScripts/','E:/sites/carwale/siteBackup','https://10.10.3.110:8172/msdeploy.axd?site=staging.carwale_9009','staging.carwale_9009','staging.carwale_9009','9009');
+insert into StagingWebsitePool values('NONE',0,'stg9011','E:/sites/carwale/staging.carwale_9011/mon','E:/sites/carwale/','E:/sites/carwale/CDScripts/mon','E:/sites/carwale/CDScripts/','E:/sites/carwale/siteBackup','https://10.10.3.110:8172/msdeploy.axd?site=staging.carwale_9011','staging.carwale_9011','staging.carwale_9011','9011');
+insert into StagingWebsitePool values('NONE',0,'stg9012','E:/sites/carwale/staging.carwale_9012/mon','E:/sites/carwale/','E:/sites/carwale/CDScripts/mon','E:/sites/carwale/CDScripts/','E:/sites/carwale/siteBackup','https://10.10.3.110:8172/msdeploy.axd?site=staging.carwale_9012','staging.carwale_9012','staging.carwale_9012','9012');

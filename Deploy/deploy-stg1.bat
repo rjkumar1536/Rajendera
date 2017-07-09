@@ -1,0 +1,2 @@
+echo %DEPLOY_FOLDER_LOCATION%
+msdeploy.exe -verb=sync -source:package="%DEPLOY_FOLDER_LOCATION%Package.zip" -dest:auto,computerName=%COMPUTER_NAME%,userName=AEPL\satish.sharma,password=Pass@123,authType=basic -setParam:"IIS Web Application Name"="%APPLICATION_NAME%" -allowUntrusted=true
